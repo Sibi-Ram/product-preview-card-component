@@ -23,8 +23,8 @@
 
 ### Links
 
-- Source Code: [view on GitHub](https://github.com/Sibi-Ram/Blog-preview-card)
-- Live Site URL: [QR code Component website](https://sibi-ram.github.io/Blog-preview-card/)
+- Source Code: [view on GitHub](https://github.com/Sibi-Ram/product-preview-card-component)
+- Live Site URL: [Product Preview Card Component website](https://sibi-ram.github.io/product-preview-card-component/)
 
 ## My process
 

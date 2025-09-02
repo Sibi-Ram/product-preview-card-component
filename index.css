@@ -17,8 +17,11 @@ body{
 
 }
 
-img{
+.img-container, .img-container img{
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
   
 }
 
@@ -29,7 +32,10 @@ img{
   border-radius: 1rem;
   overflow: hidden;
   
+  
 }
+
+
 
 .description-container{
   background-color: white;
@@ -45,6 +51,7 @@ img{
 .description-container > p:nth-child(1){
   letter-spacing: 0.3125rem;
   color: #6C7289;
+  font-size: 0.75rem;
 }
 .description-container >h1{
   font-weight: 700;
@@ -63,6 +70,8 @@ img{
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   
 }
 
@@ -113,25 +122,24 @@ footer{
 
 /* Tablet (portrait and up) */
 
-@media(min-width: 37.5rem){
-
-  .container{
-  
-  width: 80%; 
-  }
-  
-
-}
-
-@media(min-width:56.25em){
+@media(min-width:37.5rem){
   .container{
     display: flex;
     flex-direction: row;
+    width: 75%;
+    align-items: stretch;
+    
   }
 
-  .container>img{
-    width: 50%;
-    background-image: url("./images/image-product-desktop.jpg");
+  .img-container, .description-container {
+    flex: 1; /* Equal width */
   }
-
+  
+  .img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  
+}
 }

@@ -15,7 +15,13 @@
 
   <main class="container">
     
-    <img src="./images/image-product-mobile.jpg" alt="A Perfume">
+  
+  <picture class="img-container">
+    <source srcset="./images/image-product-desktop.jpg" media="(min-width: 37.5rem)">
+    <source srcset="./images/image-product-mobile.jpg" media="(max-width: 37.4rem)">
+    <img src="./images/image-product-mobile.jpg" alt="Perfume bottle with elegant glass design" loading="lazy">
+  </picture>
+    <!-- <img src="./images/image-product-mobile.jpg" alt="A Perfume"> -->
 
     <section class="description-container">
 

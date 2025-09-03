@@ -1,4 +1,4 @@
- # Blog Preview card
+ # Product Preview Card Component
 
 ## Table of contents
 

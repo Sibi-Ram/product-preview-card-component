@@ -37,14 +37,14 @@
 
 ### What I learned
 
-#### <s>StrikeThrough</s>:
+#### **<s>StrikeThrough</s>:**
 
 I learned to use ```<s>``` tag to display text with a strikethrough, which can also be used within the ```<p>``` tag
 
 ```html
 <s>StrikeThrough Text</s>
 ```
-#### Nth-child and nth-of-type pseudo-classes
+#### **<u>Nth-child and nth-of-type pseudo-classes</u>**
 
 - :nth-child(n) selects the nᵗʰ child of its parent, counting all element types.
     
@@ -74,27 +74,70 @@ position-based pseudo-classes.
   
 
 ```
+
+
+### <u>IMAGE</u>
 #### Image(icon) within the Button
 
-Initailly in css I used
-```css
-display: flex;
-align-items: center;
+  Inside a ```<button>``` tag, I can include a variety of HTML content such as
+
+  - Plain text
+  - Images or icons ( ```<img>``` tag)
+  - Inline elements like ```<span>, <i>, <b>, <strong>, <em>```
+       
+
+  ```html
+<button type="button">
+ <img src="./images/icon-cart.svg" alt="cart-icon" >
+      Add to Cart</button>
+  ```
+
+  Can Alter the size of image inside button in CSS also used Flex-box to center and align the image icon and text inside button
+
+
+#### **picture**
+
+```<picture>``` helps me to provide different image based ont he device width- one for mobile device one for desktop
+
+```html
+<picture class="img-container">
+
+<!-- Desktop full image -->
+    <source srcset="./images/image-product-desktop.jpg" media="(min-width: 37.5rem)">
+<!-- Mobile crop -->
+    <source srcset="./images/image-product-mobile.jpg" media="(max-width: 37.4rem)">
+
+    <img src="./images/image-product-mobile.jpg" alt="Perfume bottle with elegant glass design" loading="lazy">
+  </picture>
 ```
-on the ```<main>``` element, but the box was not vertically centered.
+can also use ```<picture>``` for different image format
 
-After googling I found out the reason.
-The reason: I did not set a height on the flex parent (main), so there was no extra vertical space for centering. ___By default, block elements stretch to 100% width but only as much height as their content.___
+```loading="lazy"``` attribute on the ```<img> ```element inside a ```<picture>``` element is used to *defer* loading the image until it is about to enter the *user’s viewport*. Image is not loaded immediately when the page loads, but only based on viewport width.
 
-corrected code:
-
-Set a height (e.g., height: 100vh;) on the flex parent (```<main>```).
+#### **overflow**
 
 ```css
-height: 100vh;
-align-items: center;
+.container{
+  overflow: hidden;
+}
 ```
-will vertically center the child inside the parent.
+It Hides the excess cotnent that extends outside of a container’s borders
+
+#### flex:1
+```css
+flex:1;
+```
+
+```flex: 1``` on flex children makes them take equal width sharing the ***container space evenly 50%***.
+
+
+
+
+
+
+
+
+
 
 **Key Learning:**
 

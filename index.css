@@ -57,6 +57,8 @@ body{
   font-size: 2rem;
   font-family: "Fraunces", serif;
   color: #1C232B;
+  line-height: 1;
+  letter-spacing: 0;
 
 }
 
@@ -64,6 +66,7 @@ body{
   color: #6C7289;
   line-height: 1.6;
   font-size: 0.875rem;
+  font-weight: 500;
 }
 .price{
   display: flex;

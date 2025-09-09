@@ -134,7 +134,7 @@ footer{
   .container{
     display: flex;
     flex-direction: row;
-    max-width: 75%;
+    max-width: 65%;
     align-items: stretch;
     
   }
@@ -154,12 +154,12 @@ footer{
 
 @media(min-width:61.93rem){
   .container{
-    max-width: 57%;
+    max-width: 50%;
   }
 }
 
 @media(min-width:87.5rem){
   .container{
-    max-width: 50%;
+    max-width: 40%;
   }
 }

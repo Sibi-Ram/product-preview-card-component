@@ -141,7 +141,7 @@ flex:1;
 
 **Key Learning:**
 
-___For vertical centering with flexbox, the container must have a defined height.___
+___Picture element can be used to change the image based on device width, also can use multiple formats and can use fallback image___
 
 
 ## Author
@@ -153,5 +153,5 @@ ___For vertical centering with flexbox, the container must have a defined height
 
 ## Acknowledgments
 
-This is my solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
+This is my solution to the [Preview card Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 

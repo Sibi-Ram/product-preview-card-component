@@ -37,6 +37,45 @@
 
 ### What I learned
 
+#### <s>StrikeThrough</s>:
+
+I learned to use ```<s>``` tag to display text with a strikethrough, which can also be used within the ```<p>``` tag
+
+```html
+<s>StrikeThrough Text</s>
+```
+#### Nth-child and nth-of-type pseudo-classes
+
+- :nth-child(n) selects the nᵗʰ child of its parent, counting all element types.
+    
+- :nth-of-type(n) selects the nᵗʰ child among siblings of the same tag name.
+
+  - Counting Context
+
+       - nth-child: counts every child regardless of tag.
+      - nth-of-type: counts only children matching the element’s tag.
+
+    - ">" is child combinator
+
+```css
+position-based pseudo-classes.
+  .description-container > p:nth-child(1){
+    letter-spacing: 0.3125rem;
+    color: #6C7289;
+  }
+  
+  
+  .description-container > p:nth-of-type(2){
+    color: #6C7289;
+    line-height: 1.6;
+    font-size: 0.875rem;
+  }
+  
+  
+
+```
+#### Image(icon) within the Button
+
 Initailly in css I used
 ```css
 display: flex;

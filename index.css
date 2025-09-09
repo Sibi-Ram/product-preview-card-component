@@ -134,15 +134,27 @@ footer{
   .container{
     display: flex;
     flex-direction: row;
-    max-width: 65%;
+    max-width: 60%;
     align-items: stretch;
     
   }
 
-  .img-container, .description-container {
-    flex: 1; /* Equal width */
-  }
+  .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  /* .container > *{
+    flex: 1 1 0;
+    min-width: 0;
+     
+    } */
   
+  .img-container {
+  
+  height: 100%; /* match container height */
+}
+
   .img-container img{
   width: 100%;
   height: 100%;
@@ -150,16 +162,21 @@ footer{
   display: block;
   
 }
+
+
 }
 
 @media(min-width:61.93rem){
   .container{
     max-width: 50%;
   }
+  
+  
 }
 
 @media(min-width:87.5rem){
   .container{
     max-width: 40%;
   }
+  
 }

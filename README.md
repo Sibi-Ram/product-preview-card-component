@@ -123,19 +123,32 @@ can also use ```<picture>``` for different image format
 ```
 It Hides the excess cotnent that extends outside of a container’s borders
 
-#### flex:1
+#### Equal width of 2 container-column
+
+To achieve the equal width of 2 container columns in desktop layout initially I used ```flex:1```on flex children to make them take equal width sharing the ***container space evenly 50%***, but it did not strictly apply equal space of both contianers because of the padding in text continer.The width of text contianer is larger than the image container- providing negative result ❌
+
+
 ```css
-flex:1;
+  .container > * {
+    width: 50%;
+  }
+
 ```
 
-```flex: 1``` on flex children makes them take equal width sharing the ***container space evenly 50%***.
+Applying width to 50% on 2 child containers solved the problem-Works reliably even if one side has padding or more content.✅
 
+or
 
+```css
+display: grid;
+grid-template-columns: 1fr 1fr;
+```
 
+using grid made sure Each column gets equal space, regardless of content, also Padding doesn’t affect layout: ✅
 
+✅✅✅
 
-
-
+Best to use ```width:50%``` or ```grid-template-columns: 1fr 1fr;```
 
 
 
